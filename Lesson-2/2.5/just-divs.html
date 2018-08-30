@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <title>The Domestic Dog</title>
+    <style>
+      body {
+        padding: 50px;
+      }
+      .h1 {
+        color: blue;
+        font-size: 26px;
+        margin-top: 17px;
+        margin-bottom: 17px;
+      }
+      .h2 {
+        font-size: 20px;
+        color: lightblue;
+        margin-top: 16px;
+        margin-bottom: 16px;
+      }
+      .h1, .h2 {
+        font-family: monospace;
+        font-weight: bold;
+      }
+      .ul {
+        margin-top: 16px;
+        margin-bottom: 16px;
+        padding-left: 40px;
+      }
+      .li {
+        position: relative;
+      }
+      .li::before {
+        content: '';
+        display: block;
+        height: 5px;
+        width: 5px;
+        background-color: black;
+        position: absolute;
+        border-radius: 50%;
+        top: 5px;
+        left: -10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="h1">Dogs</div>
+    <div class="h2">About</div>
+    <div class="p">The dog was the first species to be domesticated and has been selectively bred over millennia for various behaviors, sensory capabilities, and physical attributes.</div>
+    <div class="h2">Species</div>
+    <div class="ul">
+      <div class="li">Bulldogs</div>
+      <div class="li">Greyhound</div>
+      <div class="li">Huskies</div>
+    </div>
+  </body>
+</html>
