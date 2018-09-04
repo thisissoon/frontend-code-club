@@ -1,4 +1,4 @@
-# Lession 1 (23/08/2018) - Intro to Frontend
+# Lesson 1 (23/08/2018) - Intro to Frontend
 
 ## Topics
 
