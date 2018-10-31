@@ -1,0 +1,22 @@
+.post-screenshot {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+@media (min-width: 1024px) {
+  .post-screenshot {
+    width: 25%;
+  }
+}
+
+.post-name,
+.post-company {
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+  margin: 0;
+}
+
+.post-company {
+  opacity: .3;
+}

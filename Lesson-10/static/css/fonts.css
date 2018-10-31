@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Maison Neue Mono";
+  src:
+    url("/fonts/Maison-Neue-Mono/Maison-Neue-Mono.woff2") format("woff2"),
+    url("/fonts/Maison-Neue-Mono/Maison-Neue-Mono.woff") format("woff"),
+    url("/fonts/Maison-Neue-Mono/Maison-Neue-Mono.otf") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+}

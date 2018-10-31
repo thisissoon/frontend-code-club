@@ -1,0 +1,9 @@
+{{ define "main" }}
+{{ range first 10 .Pages }}
+  <article class="post">
+    <img class="post-screenshot" src="{{ .Params.screenshot }}" alt="{{ .Title }}">
+    <h2 class="post-name">{{ .Params.name }}</h2>
+    <p class="post-company">{{ .Params.company }}</p>
+  </article>
+{{ end }}
+{{ end }}
