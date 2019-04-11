@@ -1,0 +1,61 @@
+:root {
+  /* colors */
+  --white: #ffffff;
+  --black: #000000;
+  --grey: #979797;
+  --green: #a4dac9;
+
+  /* type */
+  --serif-font: "Ogg-Roman";
+  --sans-serif-font: "Akkurat-Mono";
+
+  --font-h1: normal 40px var(--serif-font);
+  --font-h2: normal 32px var(--serif-font);
+  --font-h3: normal 20px var(--serif-font);
+  --font-h4: normal 19px var(--serif-font);
+  --font-body: normal 14px/19px var(--sans-serif-font);
+  --font-small: normal 14px var(--serif-font);
+
+  --letter-spacing-h1: 1.25px;
+  --letter-spacing-h2: 1px;
+  --letter-spacing-h3: 0.63px;
+  --letter-spacing-h4: 0.15px;
+  --letter-spacing-body: 0.44px;
+  --letter-spacing-small: 0.44px;
+
+  /* grid */
+  --grid-col-padding-right: 15px;
+  --grid-col-padding-left: 15px;
+  --grid-col-left-padding-left-lg: 140px;
+  --grid-gutter: 100px;
+  --grid-width-max: 500px;
+
+  /* general */
+  --intro-copy-width: 80%;
+  --gallery-padding-top: 85px;
+  --gallery-img-width: 60%;
+  --nav-button-width: 60px;
+  --nav-animation-duration: 0.5s;
+  --nav-fixed-top-sm: 15px;
+  --nav-fixed-top-lg: 30px;
+}
+
+@media only screen and (min-width: 1024px) {
+  :root {
+    /* type */
+    --font-h1: normal 60px var(--serif-font);
+    --font-h3: normal 40px var(--serif-font);
+    --font-h4: normal 25px var(--serif-font);
+
+    --letter-spacing-h1: 1.88px;
+    --letter-spacing-h3: 0.63px;
+    --letter-spacing-h4: 0.2px;
+
+    /* grid */
+    --grid-width-max: 1280px;
+
+    /* general */
+    --intro-copy-width: 100%;
+    --gallery-img-width: 70%;
+  }
+}

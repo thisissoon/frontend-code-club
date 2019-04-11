@@ -1,0 +1,61 @@
+.container,
+.row,
+.col {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  padding-left: var(--grid-col-padding-left);
+  padding-right: var(--grid-col-padding-right);
+  margin-right: auto;
+  margin-left: auto;
+  max-width: var(--grid-width-max);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--grid-col-padding-left));
+  margin-right: calc(-1 * var(--grid-col-padding-right));
+}
+
+.col {
+  position: relative;
+  padding-left: var(--grid-col-padding-left);
+  padding-right: var(--grid-col-padding-right);
+  max-width: 100%;
+}
+
+.col--sm-1 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.col--sm-2 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.col--sm-no-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media only screen and (min-width: 1024px) {
+  .row--lg-reverse {
+    flex-direction: row-reverse;
+  }
+  .col--lg-1 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .col--lg-2 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .col--lg-no-padding {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

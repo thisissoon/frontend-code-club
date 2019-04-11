@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Misosophy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="styles/type.css" />
+    <link rel="stylesheet" type="text/css" href="styles/variables.css" />
+    <link rel="stylesheet" type="text/css" href="styles/grid.css" />
+    <link rel="stylesheet" type="text/css" href="styles/general.css" />
+    <link rel="stylesheet" type="text/css" href="styles/nav.css" />
+    <link rel="stylesheet" type="text/css" href="styles/hero.css" />
+    <link rel="stylesheet" type="text/css" href="styles/intro.css" />
+    <link rel="stylesheet" type="text/css" href="styles/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="styles/subjects.css" />
+    <link rel="stylesheet" type="text/css" href="styles/footer.css" />
+    <script src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <h1 class="hero__title">misosophy</h1>
+        <img
+          src="https://res.cloudinary.com/thisissoon/image/upload/c_scale,w_1500/v1553596050/test/misosophy-soldier.jpg"
+          alt="landscape"
+          class="hero__img"
+        />
+      </section>
+      <section class="intro">
+        <div class="container">
+          <div class="row">
+            <div class="col col--sm-2 col--lg-1">
+              <div class="intro-copy">
+                <h2 class="intro-copy__title">Misosophy means..</h2>
+                <p class="intro-copy__lead">
+                  The hatred of knowledge. But we don’t. Misosophy is about
+                  learning things that you wouldn’t normally. Discovering things
+                  unknown about the everyday, and things you don’t hear about on
+                  the news. It’s for people who who are curious and like to
+                  question what’s around them.
+                </p>
+              </div>
+              <nav class="nav" id="nav">
+                <div class="nav__overlay" id="overlay"></div>
+                <button class="nav__open" id="open" onclick="openNav(event)">
+                  m
+                </button>
+                <div class="nav__menu" id="menu">
+                  <button
+                    class="nav__close icon-cross"
+                    id="close"
+                    onclick="closeNav()"
+                  ></button>
+                  <h2 class="nav__title">Topics</h2>
+                  <ul class="nav__list">
+                    <li class="nav__list-item">
+                      <a class="nav__link" href="#toriGate" onclick="closeNav()"
+                        >Tori Gate</a
+                      >
+                    </li>
+                    <li class="nav__list-item">
+                      <a class="nav__link" onclick="closeNav()" href="#hummus"
+                        >Hummus</a
+                      >
+                    </li>
+                    <li class="nav__list-item">
+                      <a class="nav__link" onclick="closeNav()" href="#stamps"
+                        >Stamps</a
+                      >
+                    </li>
+                    <li class="nav__list-item">
+                      <a
+                        class="nav__link"
+                        onclick="closeNav()"
+                        href="#arnoldCircus"
+                        >Arnold Circus</a
+                      >
+                    </li>
+                    <li class="nav__list-item">
+                      <a
+                        class="nav__link"
+                        onclick="closeNav()"
+                        href="#skiBallet"
+                        >Ski Ballet</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="col col--sm-2 col--lg-1 col--sm-no-padding">
+              <img
+                src="https://res.cloudinary.com/thisissoon/image/upload/c_scale,w_1024/v1553598854/test/misosophy-eye.jpg"
+                alt="eye"
+                class="intro__img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="gallery">
+        <div class="container">
+          <div class="row">
+            <div class="col col--sm-2 col--lg-1 col--sm-no-padding">
+              <div class="gallery__image">
+                <img
+                  src="https://res.cloudinary.com/thisissoon/image/upload/c_scale,w_1024/v1553598854/test/misosophy-fish.jpg"
+                  alt="fish"
+                  class="gallery__img"
+                />
+              </div>
+              <div class="gallery__image">
+                <img
+                  src="https://res.cloudinary.com/thisissoon/image/upload/c_scale,w_1024/v1553598854/test/misosophy-fire.jpg"
+                  alt="fire"
+                  class="gallery__img gallery__img--two"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row row--lg-reverse">
+            <div class="col col--sm-2 col--lg-1 col--sm-no-padding">
+              <div class="gallery__image gallery__image--three">
+                <img
+                  src="https://res.cloudinary.com/thisissoon/image/upload/c_scale,w_1024/v1553598854/test/misosophy-flowers.jpg"
+                  alt="flowers"
+                  class="gallery__img gallery__img--three"
+                />
+              </div>
+            </div>
+            <div class="col col--sm-2 col--lg-1">
+              <p class="gallery__copy">
+                Learn about everything from eyes, faceblindness, phones and
+                sharks
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="subjects">
+        <div id="toriGate" class="container subject">
+          <div class="row">
+            <div class="col col--sm-2 col--lg-1">
+              <h2 class="subject__title">
+                Tori Gate
+                <span class="subject__number">001</span>
+              </h2>
+            </div>
+          </div>
+          <div class="row row--lg-reverse">
+            <div class="col col--sm-2 col--lg-1 col--lg-no-padding">
+              <img
+                src="https://res.cloudinary.com/thisissoon/image/upload/c_scale,w_500/v1553598854/test/japan.jpg"
+                alt="japan"
+                class="subject__img"
+              />
+            </div>
+            <div class="col col--sm-2 col--lg-1">
+              <p class="subject__body">
+                Is a Japnaes gate commonly found at the entrance of a shinto
+                shrine. Transition from mundane to sacred. Date back to 711D.
+                Mentioned in text written in 922AD. Traditionally made of wood
+                or stone and today are made out of reinforced concrete, copper,
+                stainless steel or other materials.
+              </p>
+              <p class="subject-link">
+                <a
+                  href="https://en.wikipedia.org/wiki/Torii"
+                  class="subject-link__anchor"
+                  >Read more</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="hummus" class="container subject">
+          <div class="row">
+            <div class="col col--sm-2 col--lg-1">
+              <h2 class="subject__title">
+                Hummus
+                <span class="subject__number">002</span>
+              </h2>
+            </div>
+          </div>
+          <div class="row row--lg-reverse">
+            <div class="col col--sm-2 col--lg-1 col--lg-no-padding">
+              <img
+                src="https://res.cloudinary.com/thisissoon/image/upload/c_scale,w_500/v1553598854/test/hummus.jpg"
+                alt="hummus"
+                class="subject__img"
+              />
+            </div>
+            <div class="col col--sm-2 col--lg-1">
+              <p class="subject__body">
+                Hummus is made all over the world. Hummus is crazy healthy. Low
+                in saturated fat and high in fiber and protein. Hummus comes in
+                so many awesome flavors Hummus is an Arabic word meaning
+                chickpea . Earliest Recipe found in a Egyptian cookbook. Hummus
+                is mentioned in the Hebrew bible, in a section called Book of
+                Ruth
+              </p>
+              <p class="subject-link">
+                <a
+                  href="https://en.wikipedia.org/wiki/Hummus"
+                  class="subject-link__anchor"
+                  >Read more</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="stamps" class="container subject">
+          <div class="row">
+            <div class="col col--sm-2 col--lg-1">
+              <h2 class="subject__title">
+                History of the stamp
+                <span class="subject__number">003</span>
+              </h2>
+            </div>
+          </div>
+          <div class="row row--lg-reverse">
+            <div class="col col--sm-2 col--lg-1 col--lg-no-padding">
+              <img
+                src="https://res.cloudinary.com/thisissoon/image/upload/w_500/v1554216090/test/stamp.jpg"
+                alt="stamp"
+                class="subject__img"
+              />
+            </div>
+            <div class="col col--sm-2 col--lg-1">
+              <p class="subject__body">
+                1840 1 stamp was worth £5.61. British guinea one cent magenta
+                stamp was sold at auction in NY 2014 for £5.6 million. Henry
+                VIII created Royal Mail in 1516, from then 1842 postage was
+                generally paid by the receiver rather than the sender. 1973,
+                Bhutan issue a stamp that could play their national anthem if
+                put on a record player. In 2013 Belgium issued a stamp that
+                smelt and tasted of chocolate
+              </p>
+              <p class="subject-link">
+                <a
+                  href="https://en.wikipedia.org/wiki/Postage_stamp"
+                  class="subject-link__anchor"
+                  >Read more</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="arnoldCircus" class="container subject">
+          <div class="row">
+            <div class="col col--sm-2 col--lg-1">
+              <h2 class="subject__title">
+                Arnold Circus
+                <span class="subject__number">004</span>
+              </h2>
+            </div>
+          </div>
+          <div class="row row--lg-reverse">
+            <div class="col col--sm-2 col--lg-1 col--lg-no-padding">
+              <img
+                src="https://res.cloudinary.com/thisissoon/image/upload/w_500/v1554216090/test/arnold-circus.jpg"
+                alt="arnold circus"
+                class="subject__img"
+              />
+            </div>
+            <div class="col col--sm-2 col--lg-1">
+              <p class="subject__body">
+                The central area of the The Boundary Estate - a housing
+                development, formally opened in 1900, in the East End of London,
+                arguably the world's first council estate. The Boundary Estate
+                was built on top of the demolished Friars Mount rookery (slum)
+                in the Old Nichol (residential area) as part of a London slum
+                clearance strategy. Slum clearance (still used today e.g major
+                sporting events) is a urban renewal policy which destroys and
+                transforms low income housing.
+              </p>
+              <p class="subject-link">
+                <a
+                  href="https://en.wikipedia.org/wiki/Boundary_Estate"
+                  class="subject-link__anchor"
+                  >Read more</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="skiBallet" class="container subject">
+          <div class="row">
+            <div class="col col--sm-2 col--lg-1">
+              <h2 class="subject__title">
+                What is Ski Ballet?
+                <span class="subject__number">005</span>
+              </h2>
+            </div>
+          </div>
+          <div class="row row--lg-reverse">
+            <div class="col col--sm-2 col--lg-1 col--lg-no-padding">
+              <img
+                src="https://res.cloudinary.com/thisissoon/image/upload/w_500/v1554220529/test/ski.jpg"
+                alt="ski"
+                class="subject__img"
+              />
+            </div>
+            <div class="col col--sm-2 col--lg-1">
+              <p class="subject__body">
+                Freeslteing skiing displine which is corepgho to ksuck for 90
+                seconds. IT was originally a demonstration sport. A bit like
+                cheerleading for skiing. After 2000 was formal competition
+                stopped. Hot dog film there is a scene of balled skiing. Suzey
+                Chafee after her sking ballet career become a model for ford
+                model. Spoke person for chapsitkc lip balm. Apparetnly it was
+                fullled by weed and wine
+              </p>
+              <p class="subject-link">
+                <a
+                  href="https://en.wikipedia.org/wiki/Ski_ballet"
+                  class="subject-link__anchor"
+                  >Read more</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col col--sm-2 col--lg-1">
+            <h2 class="footer__title">misosophy</h2>
+          </div>
+          <div class="col col--sm-2 col--lg-1">
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__link" href="https://thisissoon.com/">SOON_</a>
+              </li>
+              <li class="footer__list-item">
+                <a
+                  class="footer__link"
+                  href="https://www.instagram.com/soon_london/"
+                  >Instagram</a
+                >
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="https://github.com/thisissoon"
+                  >GitHub</a
+                >
+              </li>
+              <li class="footer__list-item">
+                <a
+                  class="footer__link"
+                  href="https://www.linkedin.com/company/5010088"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/nav.js"></script>
+  </body>
+</html>
